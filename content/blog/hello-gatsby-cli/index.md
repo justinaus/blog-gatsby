@@ -28,3 +28,5 @@ gatsby develop
 
 ## 배포
 netlify 공홈 가서 깃헙 계정 연결하고 시키는 대로 하면 배포 완료!
+
+정해진 브랜치에 push하면, build & deploy 하는 듯?
