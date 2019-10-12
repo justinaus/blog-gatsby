@@ -56,7 +56,7 @@ const Bio = () => {
       <p>
         <div>Written by <strong>{author}</strong></div>
         {` `}
-        <a href={`https://github.com/justinaus`} target="_blank">
+        <a href={`https://github.com/justinaus`} target="_blank" rel="noopener noreferrer">
           github.com/justinaus
         </a>
       </p>
