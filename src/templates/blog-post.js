@@ -49,7 +49,7 @@ class BlogPostTemplate extends React.Component {
           </footer>
         </article>
 
-        <nav>
+        {/* <nav>
           <ul
             style={{
               display: `flex`,
@@ -74,7 +74,7 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </Layout>
     )
   }
