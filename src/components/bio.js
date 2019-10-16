@@ -53,10 +53,18 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <p
+        style={{
+          color: `#777777`,
+        }}
+      >
         <div>Written by <strong>{author}</strong></div>
         {` `}
-        <a href={`https://github.com/justinaus`} target="_blank" rel="noopener noreferrer">
+        <a
+          style={{
+            color: `inherit`,
+          }} 
+          href={`https://github.com/justinaus`} target="_blank" rel="noopener noreferrer">
           github.com/justinaus
         </a>
       </p>
