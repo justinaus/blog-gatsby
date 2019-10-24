@@ -50,7 +50,8 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
-          <section id="inject-comments-for-uterances" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div id="inject-comments-for-uterances"></div>
           <hr
             style={{
               marginBottom: rhythm(1),
