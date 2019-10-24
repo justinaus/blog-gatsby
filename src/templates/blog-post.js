@@ -7,6 +7,18 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
+  componentDidMount() {
+    let script = document.createElement("script");
+    let anchor = document.getElementById("inject-comments-for-uterances");
+    script.setAttribute("src", "https://utteranc.es/client.js");
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async", true);
+    script.setAttribute("repo", "justinaus/blog-gatsby");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute( "theme", "github-light");
+    anchor.appendChild(script);
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
