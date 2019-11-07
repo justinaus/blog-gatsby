@@ -6,7 +6,11 @@ description: Hello gatsby-cli.
 
 ## get started 
 
-
+```bash
+npm install -g gatsby-cli
+gatsby new my-project
+gatsby develop
+```
 
 #### 🔗 참고  
 - https://www.gatsbyjs.org/docs/gatsby-cli/
@@ -14,7 +18,10 @@ description: Hello gatsby-cli.
 
 ## start with blog boilerplate
 
-
+```bash
+gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
+gatsby develop
+```
 
 #### 🔗 참고  
 - https://github.com/gatsbyjs/gatsby-starter-blog
