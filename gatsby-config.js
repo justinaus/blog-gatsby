@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://justinaus.tk/`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
