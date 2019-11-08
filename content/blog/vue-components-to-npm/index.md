@@ -90,7 +90,7 @@ dist 폴더 확인
 
 #### 배포
 
-npm public --access=public
+npm publish --access=public
 
 ## troubleshooting
 npm 정상 배포 되었으나, 
