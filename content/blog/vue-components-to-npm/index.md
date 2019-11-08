@@ -93,6 +93,8 @@ dist 폴더 확인
 npm publish --access=public
 
 ## troubleshooting
+
+### css
 npm 정상 배포 되었으나, 
 인스톨해서 컴포넌트를 사용하니 css에 대한 내용이 빠져 있었다.
 
@@ -104,6 +106,9 @@ module.exports = {
   css: { extract: false }
 }
 ```
+
+### version
+package.json - version 꼭 올려줘야 함.
 
 ## npm에 배포한 패키지 사용
 
