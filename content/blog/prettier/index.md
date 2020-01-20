@@ -15,23 +15,28 @@ description: Hello Prettier.
 - 대세를 따른다.
 
 
-## 방식
+## 내가 할 방식
 
-vscode에 익스텐션 설치해서 사용하는 방법도 있지만, 지금까지 고민한 바로는 코드 스타일 설정 파일이 프로젝트 내에 있는 게 좋은 것 같다.
+vscode에서 글로벌하게 설정할 수도 있지만,
 
+지금까지 고민한 바로는 코드 스타일 설정 파일이 프로젝트 내에 있는 게 좋은 것 같다.
 (vue-cli 처음 프로젝트 생성할 때 manually로 선택할 수도 있다. (eslint + prettier))
 
 
 ## get started 
 
-1. 설치
+1. Prettier extension 설치
+    - vscode - 확장 >  Prettier - Code formatter 설치
+
+
+2. Prettier 설치
 
 ```bash
 yarn add @vue/eslint-config-prettier eslint-plugin-prettier --dev
 ```
 
 
-2. .eslintrc.js 파일 생성, package.json 파일에서 eslintConfig 분리
+3. .eslintrc.js 파일 생성, package.json 파일에서 eslintConfig 분리
 
 ```js
 // .eslintrc.js
@@ -52,13 +57,6 @@ module.exports = {
 ```
 
 
-3. lint
-
-```bash
-yarn lint
-```
-
-
 4. prettierrc.json 파일 생성
 
 ```json
@@ -73,18 +71,22 @@ yarn lint
 ```
 
 
-5. lint
-
-```bash
-yarn lint
+5. 프로젝트 내에 설정 파일 생성
+    - 프로젝트 루트 위치에 .vscode 폴더 생성
+    - 그 안에 settings.json 파일 생성
+```js
+// settings.json
+{
+  "editor.formatOnSave": true // 저장할 때 자동 수정.
+}
 ```
 
 
-6. 개별 파일 수정
+~~개별 파일 수정~~
 
-```bash
-cmd + shift + P -> Format Document
-```
+~~cmd + shift + P -> Format Document~~
+
+
 
 
 ## 🔗 참고  
