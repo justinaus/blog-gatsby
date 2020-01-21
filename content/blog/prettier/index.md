@@ -25,18 +25,21 @@ vscode에서 글로벌하게 설정할 수도 있지만,
 
 ## get started 
 
-1. Prettier extension 설치
+1. Eslint extension 설치
+    - vscode - 확장 >  ESLint 설치
+
+2. Prettier extension 설치
     - vscode - 확장 >  Prettier - Code formatter 설치
 
 
-2. Prettier 설치
+3. Prettier 설치
 
 ```bash
 yarn add @vue/eslint-config-prettier eslint-plugin-prettier --dev
 ```
 
 
-3. .eslintrc.js 파일 생성, package.json 파일에서 eslintConfig 분리
+4. .eslintrc.js 파일 생성, package.json 파일에서 eslintConfig 분리
 
 ```js
 // .eslintrc.js
@@ -57,7 +60,7 @@ module.exports = {
 ```
 
 
-4. prettierrc.json 파일 생성
+5. prettierrc.json 파일 생성
 
 ```json
 {
@@ -71,14 +74,31 @@ module.exports = {
 ```
 
 
-5. 프로젝트 내에 설정 파일 생성
+6. 프로젝트 내에 설정 파일 생성
     - 프로젝트 루트 위치에 .vscode 폴더 생성
     - 그 안에 settings.json 파일 생성
 ```js
 // settings.json
 {
-  "editor.formatOnSave": true // 저장할 때 자동 수정.
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ]
 }
+
 ```
 
 
