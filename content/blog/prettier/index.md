@@ -32,7 +32,7 @@ vscode에서 글로벌하게 설정할 수도 있지만,
     - vscode - 확장 >  Prettier - Code formatter 설치
 
 
-3. Prettier 설치
+3. 프로젝트에 Prettier 설치
 
 ```bash
 yarn add @vue/eslint-config-prettier eslint-plugin-prettier --dev
